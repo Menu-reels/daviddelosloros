@@ -326,7 +326,7 @@ form.addEventListener('submit', function(event) {
     const inputEmailClient = encodeURIComponent(form.querySelector('input[type="email"]').value);
     const inputPhone = encodeURIComponent(telefonoInput.value.replace(/\s+/g, ''));
     const clientEmail = encodeURIComponent("piensoelandaluz@gmx.es");
-    const mascota = encodeURIComponent(form.getElementById("mascota").value);
+    const mascota = encodeURIComponent(document.getElementById("mascota").value);
 
     // Enviar datos solo si el teléfono tiene al menos 10 dígitos
     if (inputPhone.replace(/\D/g, '').length < 10) {
